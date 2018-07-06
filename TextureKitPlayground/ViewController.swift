@@ -11,10 +11,19 @@ import AsyncDisplayKit
 
 final class ViewController: ASViewController <ASDisplayNode> {
 
-	override func viewDidLoad() {
-		super.viewDidLoad()
-		// Do any additional setup after loading the view, typically from a nib.
+
+	init() {
+		super.init(node: ASDisplayNode())
 	}
 
+	required init?(coder aDecoder: NSCoder) {
+		super.init(coder: aDecoder)
+	}
+
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		self.node.backgroundColor = UIColor.blue
+		
+	}
 }
 
