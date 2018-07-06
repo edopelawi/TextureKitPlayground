@@ -11,6 +11,10 @@
 		8D193E8A20EB796100E0A388 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D193E8920EB796100E0A388 /* ViewController.swift */; };
 		8D193E8F20EB796300E0A388 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D193E8E20EB796300E0A388 /* Assets.xcassets */; };
 		8D193E9220EB796300E0A388 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D193E9020EB796300E0A388 /* LaunchScreen.storyboard */; };
+		8D59A54020EF251700BFE68B /* AsyncDisplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D59A53C20EF251700BFE68B /* AsyncDisplayKit.framework */; };
+		8D59A54120EF251700BFE68B /* PINCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D59A53D20EF251700BFE68B /* PINCache.framework */; };
+		8D59A54220EF251700BFE68B /* PINOperation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D59A53E20EF251700BFE68B /* PINOperation.framework */; };
+		8D59A54320EF251700BFE68B /* PINRemoteImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D59A53F20EF251700BFE68B /* PINRemoteImage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		8D193E8E20EB796300E0A388 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D193E9120EB796300E0A388 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D193E9320EB796300E0A388 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D59A53C20EF251700BFE68B /* AsyncDisplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AsyncDisplayKit.framework; path = Carthage/Build/iOS/AsyncDisplayKit.framework; sourceTree = "<group>"; };
+		8D59A53D20EF251700BFE68B /* PINCache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINCache.framework; path = Carthage/Build/iOS/PINCache.framework; sourceTree = "<group>"; };
+		8D59A53E20EF251700BFE68B /* PINOperation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINOperation.framework; path = Carthage/Build/iOS/PINOperation.framework; sourceTree = "<group>"; };
+		8D59A53F20EF251700BFE68B /* PINRemoteImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINRemoteImage.framework; path = Carthage/Build/iOS/PINRemoteImage.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +35,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D59A54020EF251700BFE68B /* AsyncDisplayKit.framework in Frameworks */,
+				8D59A54220EF251700BFE68B /* PINOperation.framework in Frameworks */,
+				8D59A54320EF251700BFE68B /* PINRemoteImage.framework in Frameworks */,
+				8D59A54120EF251700BFE68B /* PINCache.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +50,7 @@
 			children = (
 				8D193E8620EB796100E0A388 /* TextureKitPlayground */,
 				8D193E8520EB796100E0A388 /* Products */,
+				8D59A53B20EF24FA00BFE68B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +74,17 @@
 			path = TextureKitPlayground;
 			sourceTree = "<group>";
 		};
+		8D59A53B20EF24FA00BFE68B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D59A53C20EF251700BFE68B /* AsyncDisplayKit.framework */,
+				8D59A53D20EF251700BFE68B /* PINCache.framework */,
+				8D59A53E20EF251700BFE68B /* PINOperation.framework */,
+				8D59A53F20EF251700BFE68B /* PINRemoteImage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,6 +95,7 @@
 				8D193E8020EB796100E0A388 /* Sources */,
 				8D193E8120EB796100E0A388 /* Frameworks */,
 				8D193E8220EB796100E0A388 /* Resources */,
+				8D59A54420EF252100BFE68B /* Copy Carthage Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +150,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8D59A54420EF252100BFE68B /* Copy Carthage Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/AsyncDisplayKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/PINCache.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/PINOperation.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/PINRemoteImage.framework",
+			);
+			name = "Copy Carthage Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D193E8020EB796100E0A388 /* Sources */ = {
@@ -270,6 +316,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GX458V4RKG;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TextureKitPlayground/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -288,6 +338,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GX458V4RKG;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TextureKitPlayground/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
