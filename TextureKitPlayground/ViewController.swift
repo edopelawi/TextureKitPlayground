@@ -11,41 +11,13 @@ import AsyncDisplayKit
 
 final class ViewController: ASViewController <ASDisplayNode> {
 
+	private let mainViewNode = MainViewNode()
 
 	init() {
-		super.init(node: ASDisplayNode())
+		super.init(node: mainViewNode)
 	}
 
 	required init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
 	}
-
-	override func viewDidLoad() {
-		super.viewDidLoad()
-		self.node.backgroundColor = UIColor.blue
-		configureSubnodes()
-	}
-
-	private func configureSubnodes() {
-
-		let textNode = createLabelNode()
-		self.node.addSubnode(textNode)
-	}
-
-	private func createLabelNode() -> ASTextNode {
-
-		defer {
-			dismiss(animated: true, completion: nil)
-		}
-
-		let attrs = [NSAttributedStringKey.font: UIFont(name: "HelveticaNeue", size: 12.0)]
-		let string = NSAttributedString(string: "Hey, here's some text.", attributes: attrs)
-
-		let node = ASTextNode()
-		node.attributedText = string
-
-		return node
-	}
-
 }
-
