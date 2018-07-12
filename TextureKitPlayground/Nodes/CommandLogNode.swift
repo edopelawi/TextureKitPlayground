@@ -20,6 +20,7 @@ final class CommandLogNode: ASDisplayNode {
 	override init() {
 		super.init()
 
+		automaticallyManagesSubnodes = true
 		configureMainNode()
 		configureSubnodes()
 	}
@@ -28,13 +29,15 @@ final class CommandLogNode: ASDisplayNode {
 
 		let commandLayout = makeCommandLayout()
 
-		return ASStackLayoutSpec(
+		let contentLayout = ASStackLayoutSpec(
 			direction: .horizontal,
 			spacing: 8.0,
-			justifyContent: .center,
-			alignItems: .stretch,
+			justifyContent: .spaceBetween,
+			alignItems: .center,
 			children: [ commandLayout, dateNode ]
 		)
+
+		return ASInsetLayoutSpec(insets: UIEdgeInsets(top: 0, left: 12.0, bottom: 0, right: 12.0), child: contentLayout)
 	}
 
 	// MARK: - Private methods
@@ -81,7 +84,7 @@ final class CommandLogNode: ASDisplayNode {
 			NSAttributedStringKey.foregroundColor: UIColor(red: (94 / 255), green: (136 / 255), blue: (194 / 255), alpha: 1.0)
 		]
 
-		callerNode.attributedText = NSAttributedString(string: "RandomClass", attributes: attributes)
+		callerNode.attributedText = NSAttributedString(string: "RandomClass", attributes: attributes)		
 	}
 
 	// MARK: - Layout maker
