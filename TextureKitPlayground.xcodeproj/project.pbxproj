@@ -16,6 +16,7 @@
 		8D59A54220EF251700BFE68B /* PINOperation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D59A53E20EF251700BFE68B /* PINOperation.framework */; };
 		8D59A54320EF251700BFE68B /* PINRemoteImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D59A53F20EF251700BFE68B /* PINRemoteImage.framework */; };
 		8DC6EB3420F71A8B008850A7 /* MainNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC6EB3320F71A8B008850A7 /* MainNode.swift */; };
+		8DC6EB3620F71AE7008850A7 /* CommandLogNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC6EB3520F71AE7008850A7 /* CommandLogNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		8D59A53E20EF251700BFE68B /* PINOperation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINOperation.framework; path = Carthage/Build/iOS/PINOperation.framework; sourceTree = "<group>"; };
 		8D59A53F20EF251700BFE68B /* PINRemoteImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINRemoteImage.framework; path = Carthage/Build/iOS/PINRemoteImage.framework; sourceTree = "<group>"; };
 		8DC6EB3320F71A8B008850A7 /* MainNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNode.swift; sourceTree = "<group>"; };
+		8DC6EB3520F71AE7008850A7 /* CommandLogNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandLogNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				8DC6EB3320F71A8B008850A7 /* MainNode.swift */,
+				8DC6EB3520F71AE7008850A7 /* CommandLogNode.swift */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 			files = (
 				8DC6EB3420F71A8B008850A7 /* MainNode.swift in Sources */,
 				8D193E8A20EB796100E0A388 /* ViewController.swift in Sources */,
+				8DC6EB3620F71AE7008850A7 /* CommandLogNode.swift in Sources */,
 				8D193E8820EB796100E0A388 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
