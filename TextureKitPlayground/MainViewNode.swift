@@ -15,7 +15,11 @@ final class MainViewNode: ASDisplayNode {
 
 	override init() {
 		super.init()
+
+		configureMainNode()
 		configureTextNode()
+
+		automaticallyManagesSubnodes = true
 	}
 
 	override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
@@ -23,6 +27,10 @@ final class MainViewNode: ASDisplayNode {
 	}
 
 	// MARK: - Private methods -
+
+	private func configureMainNode() {
+		self.backgroundColor = UIColor.white
+	}
 
 	private func configureTextNode() {
 
