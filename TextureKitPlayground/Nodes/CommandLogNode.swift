@@ -37,7 +37,7 @@ final class CommandLogNode: ASDisplayNode {
 			children: [ commandLayout, dateNode ]
 		)
 
-		return ASInsetLayoutSpec(insets: UIEdgeInsets(top: 0, left: 12.0, bottom: 0, right: 12.0), child: contentLayout)
+		return ASInsetLayoutSpec(insets: UIEdgeInsets(top: .infinity, left: 12.0, bottom: .infinity, right: 12.0), child: contentLayout)
 	}
 
 	// MARK: - Private methods
@@ -84,7 +84,7 @@ final class CommandLogNode: ASDisplayNode {
 			NSAttributedStringKey.foregroundColor: UIColor(red: (94 / 255), green: (136 / 255), blue: (194 / 255), alpha: 1.0)
 		]
 
-		callerNode.attributedText = NSAttributedString(string: "RandomClass", attributes: attributes)		
+		callerNode.attributedText = NSAttributedString(string: "RandomClass", attributes: attributes)
 	}
 
 	// MARK: - Layout maker
