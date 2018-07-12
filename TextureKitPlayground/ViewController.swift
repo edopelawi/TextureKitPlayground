@@ -11,7 +11,7 @@ import AsyncDisplayKit
 
 final class ViewController: ASViewController <ASDisplayNode> {
 
-	private let mainNode = MainNode()
+	private let mainNode = CommandLogNode()
 
 	init() {
 		super.init(node: mainNode)
