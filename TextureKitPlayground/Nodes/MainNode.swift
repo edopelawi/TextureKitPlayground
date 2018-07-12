@@ -1,5 +1,5 @@
 //
-//  MainView.swift
+//  MainNode.swift
 //  TextureKitPlayground
 //
 //  Created by Ricardo Pramana Suranta on 12/07/18.
@@ -9,7 +9,7 @@
 import UIKit
 import AsyncDisplayKit
 
-final class MainViewNode: ASDisplayNode {
+final class MainNode: ASDisplayNode {
 
 	private let textNode = ASTextNode()
 

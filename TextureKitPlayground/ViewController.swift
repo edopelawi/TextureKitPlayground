@@ -11,10 +11,10 @@ import AsyncDisplayKit
 
 final class ViewController: ASViewController <ASDisplayNode> {
 
-	private let mainViewNode = MainViewNode()
+	private let mainNode = MainNode()
 
 	init() {
-		super.init(node: mainViewNode)
+		super.init(node: mainNode)
 	}
 
 	required init?(coder aDecoder: NSCoder) {

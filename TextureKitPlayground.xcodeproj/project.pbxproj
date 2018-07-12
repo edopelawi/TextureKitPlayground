@@ -15,7 +15,7 @@
 		8D59A54120EF251700BFE68B /* PINCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D59A53D20EF251700BFE68B /* PINCache.framework */; };
 		8D59A54220EF251700BFE68B /* PINOperation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D59A53E20EF251700BFE68B /* PINOperation.framework */; };
 		8D59A54320EF251700BFE68B /* PINRemoteImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D59A53F20EF251700BFE68B /* PINRemoteImage.framework */; };
-		8DC6EB3120F71349008850A7 /* MainViewNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC6EB3020F71349008850A7 /* MainViewNode.swift */; };
+		8DC6EB3420F71A8B008850A7 /* MainNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC6EB3320F71A8B008850A7 /* MainNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 		8D59A53D20EF251700BFE68B /* PINCache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINCache.framework; path = Carthage/Build/iOS/PINCache.framework; sourceTree = "<group>"; };
 		8D59A53E20EF251700BFE68B /* PINOperation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINOperation.framework; path = Carthage/Build/iOS/PINOperation.framework; sourceTree = "<group>"; };
 		8D59A53F20EF251700BFE68B /* PINRemoteImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINRemoteImage.framework; path = Carthage/Build/iOS/PINRemoteImage.framework; sourceTree = "<group>"; };
-		8DC6EB3020F71349008850A7 /* MainViewNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewNode.swift; sourceTree = "<group>"; };
+		8DC6EB3320F71A8B008850A7 /* MainNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,9 +67,9 @@
 		8D193E8620EB796100E0A388 /* TextureKitPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				8DC6EB3220F71A72008850A7 /* Nodes */,
 				8D193E8720EB796100E0A388 /* AppDelegate.swift */,
 				8D193E8920EB796100E0A388 /* ViewController.swift */,
-				8DC6EB3020F71349008850A7 /* MainViewNode.swift */,
 				8D193E8E20EB796300E0A388 /* Assets.xcassets */,
 				8D193E9020EB796300E0A388 /* LaunchScreen.storyboard */,
 				8D193E9320EB796300E0A388 /* Info.plist */,
@@ -86,6 +86,14 @@
 				8D59A53F20EF251700BFE68B /* PINRemoteImage.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8DC6EB3220F71A72008850A7 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				8DC6EB3320F71A8B008850A7 /* MainNode.swift */,
+			);
+			path = Nodes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,8 +188,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DC6EB3420F71A8B008850A7 /* MainNode.swift in Sources */,
 				8D193E8A20EB796100E0A388 /* ViewController.swift in Sources */,
-				8DC6EB3120F71349008850A7 /* MainViewNode.swift in Sources */,
 				8D193E8820EB796100E0A388 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
