@@ -17,6 +17,7 @@
 		8D59A54320EF251700BFE68B /* PINRemoteImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D59A53F20EF251700BFE68B /* PINRemoteImage.framework */; };
 		8DC6EB3420F71A8B008850A7 /* MainNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC6EB3320F71A8B008850A7 /* MainNode.swift */; };
 		8DC6EB3620F71AE7008850A7 /* CommandLogNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC6EB3520F71AE7008850A7 /* CommandLogNode.swift */; };
+		8DC6EB3820F74109008850A7 /* PhotoOverlayNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC6EB3720F74109008850A7 /* PhotoOverlayNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		8D59A53F20EF251700BFE68B /* PINRemoteImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINRemoteImage.framework; path = Carthage/Build/iOS/PINRemoteImage.framework; sourceTree = "<group>"; };
 		8DC6EB3320F71A8B008850A7 /* MainNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNode.swift; sourceTree = "<group>"; };
 		8DC6EB3520F71AE7008850A7 /* CommandLogNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandLogNode.swift; sourceTree = "<group>"; };
+		8DC6EB3720F74109008850A7 /* PhotoOverlayNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoOverlayNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			children = (
 				8DC6EB3320F71A8B008850A7 /* MainNode.swift */,
 				8DC6EB3520F71AE7008850A7 /* CommandLogNode.swift */,
+				8DC6EB3720F74109008850A7 /* PhotoOverlayNode.swift */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				8D193E8A20EB796100E0A388 /* ViewController.swift in Sources */,
 				8DC6EB3620F71AE7008850A7 /* CommandLogNode.swift in Sources */,
 				8D193E8820EB796100E0A388 /* AppDelegate.swift in Sources */,
+				8DC6EB3820F74109008850A7 /* PhotoOverlayNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
