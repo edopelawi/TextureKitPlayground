@@ -25,7 +25,23 @@ final class PhotoOverlayNode: ASDisplayNode {
 
 	// MARK: - Private methods
 
-	// MARK: Node configuration
+	// MARK: - Layout
+
+	override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
+
+		let maximumSize = constrainedSize.max.width / 2
+		let pictureFrameSize = CGSize(width: maximumSize, height: maximumSize)
+		pictureFrameNode.style.preferredSize = pictureFrameSize
+
+		let textInset = UIEdgeInsets(top: .infinity, left: 12, bottom: 12, right: 12)
+		let textInsetSpec = ASInsetLayoutSpec(insets: textInset, child: nameNode)
+
+		let pictureFrameLayoutSpec = ASOverlayLayoutSpec(child: pictureFrameNode, overlay: textInsetSpec)
+
+		return ASCenterLayoutSpec(centeringOptions: .XY, sizingOptions: .minimumXY, child: pictureFrameLayoutSpec)
+	}
+
+	// MARK: - Node configuration
 
 	private func configureMainNode() {
 		self.backgroundColor = UIColor.white
