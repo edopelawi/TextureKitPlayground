@@ -11,7 +11,7 @@ import AsyncDisplayKit
 
 final class ViewController: ASViewController <ASDisplayNode> {
 
-	private let mainNode = CommerceItemNode()
+	private let mainNode = SVGImageNode()
 
 	init() {
 		super.init(node: mainNode)
@@ -19,5 +19,12 @@ final class ViewController: ASViewController <ASDisplayNode> {
 
 	required init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
+	}
+
+	override func viewDidLoad() {
+		super.viewDidLoad()
+
+		mainNode.backgroundColor = UIColor.white
+		mainNode.configureFor(urlString: "https://dev.w3.org/SVG/tools/svgweb/samples/svg-files/adobe.svg")
 	}
 }
