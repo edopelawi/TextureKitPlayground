@@ -11,7 +11,7 @@ import AsyncDisplayKit
 
 final class ViewController: ASViewController <ASDisplayNode> {
 
-	private let mainNode = PhotoOverlayNode()
+	private let mainNode = PhotoOutsetNode()
 
 	init() {
 		super.init(node: mainNode)
