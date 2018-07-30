@@ -14,9 +14,6 @@
 		8D193E8F20EB796300E0A388 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D193E8E20EB796300E0A388 /* Assets.xcassets */; };
 		8D193E9220EB796300E0A388 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D193E9020EB796300E0A388 /* LaunchScreen.storyboard */; };
 		8D59A54020EF251700BFE68B /* AsyncDisplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D59A53C20EF251700BFE68B /* AsyncDisplayKit.framework */; };
-		8D59A54120EF251700BFE68B /* PINCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D59A53D20EF251700BFE68B /* PINCache.framework */; };
-		8D59A54220EF251700BFE68B /* PINOperation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D59A53E20EF251700BFE68B /* PINOperation.framework */; };
-		8D59A54320EF251700BFE68B /* PINRemoteImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D59A53F20EF251700BFE68B /* PINRemoteImage.framework */; };
 		8DBB7FCE2109A1A900FFB1FD /* CommerceItemNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBB7FCD2109A1A900FFB1FD /* CommerceItemNode.swift */; };
 		8DC6EB3420F71A8B008850A7 /* MainNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC6EB3320F71A8B008850A7 /* MainNode.swift */; };
 		8DC6EB3620F71AE7008850A7 /* CommandLogNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC6EB3520F71AE7008850A7 /* CommandLogNode.swift */; };
@@ -33,9 +30,6 @@
 		8D193E9120EB796300E0A388 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D193E9320EB796300E0A388 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D59A53C20EF251700BFE68B /* AsyncDisplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AsyncDisplayKit.framework; path = Carthage/Build/iOS/AsyncDisplayKit.framework; sourceTree = "<group>"; };
-		8D59A53D20EF251700BFE68B /* PINCache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINCache.framework; path = Carthage/Build/iOS/PINCache.framework; sourceTree = "<group>"; };
-		8D59A53E20EF251700BFE68B /* PINOperation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINOperation.framework; path = Carthage/Build/iOS/PINOperation.framework; sourceTree = "<group>"; };
-		8D59A53F20EF251700BFE68B /* PINRemoteImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINRemoteImage.framework; path = Carthage/Build/iOS/PINRemoteImage.framework; sourceTree = "<group>"; };
 		8DBB7FCD2109A1A900FFB1FD /* CommerceItemNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommerceItemNode.swift; sourceTree = "<group>"; };
 		8DC6EB3320F71A8B008850A7 /* MainNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNode.swift; sourceTree = "<group>"; };
 		8DC6EB3520F71AE7008850A7 /* CommandLogNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandLogNode.swift; sourceTree = "<group>"; };
@@ -49,9 +43,6 @@
 			files = (
 				8D59A54020EF251700BFE68B /* AsyncDisplayKit.framework in Frameworks */,
 				8D11CF97210F1AF500552FAE /* Macaw.framework in Frameworks */,
-				8D59A54220EF251700BFE68B /* PINOperation.framework in Frameworks */,
-				8D59A54320EF251700BFE68B /* PINRemoteImage.framework in Frameworks */,
-				8D59A54120EF251700BFE68B /* PINCache.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,9 +84,6 @@
 			children = (
 				8D11CF96210F1AF500552FAE /* Macaw.framework */,
 				8D59A53C20EF251700BFE68B /* AsyncDisplayKit.framework */,
-				8D59A53D20EF251700BFE68B /* PINCache.framework */,
-				8D59A53E20EF251700BFE68B /* PINOperation.framework */,
-				8D59A53F20EF251700BFE68B /* PINRemoteImage.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -186,9 +174,6 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/AsyncDisplayKit.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/PINCache.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/PINOperation.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/PINRemoteImage.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Macaw.framework",
 			);
 			name = "Copy Carthage Frameworks";
