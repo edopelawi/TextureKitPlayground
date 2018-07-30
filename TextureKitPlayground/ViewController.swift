@@ -7,19 +7,17 @@
 //
 
 import UIKit
+import AsyncDisplayKit
 
-class ViewController: UIViewController {
+final class ViewController: ASViewController <ASDisplayNode> {
 
-	override func viewDidLoad() {
-		super.viewDidLoad()
-		// Do any additional setup after loading the view, typically from a nib.
+	private let mainNode = CommerceItemNode()
+
+	init() {
+		super.init(node: mainNode)
 	}
 
-	override func didReceiveMemoryWarning() {
-		super.didReceiveMemoryWarning()
-		// Dispose of any resources that can be recreated.
+	required init?(coder aDecoder: NSCoder) {
+		super.init(coder: aDecoder)
 	}
-
-
 }
-
