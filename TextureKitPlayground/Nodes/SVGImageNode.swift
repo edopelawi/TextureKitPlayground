@@ -23,18 +23,12 @@ final class SVGImageNode: ASDisplayNode {
 	override init() {
 		super.init()
 		automaticallyManagesSubnodes = true
+		svgView.backgroundColor = .clear
 	}
 
 	override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
 
-		let displayNode = ASDisplayNode { [weak self] () -> UIView in
-
-			if let svgView = self?.svgView {
-				return svgView
-			} else {
-				return UIView()
-			}
-		}
+		let displayNode = makeDisplayNode()
 
 		return ASWrapperLayoutSpec(layoutElement: displayNode)
 	}
@@ -128,5 +122,19 @@ final class SVGImageNode: ASDisplayNode {
 		}
 
 		currentDataTask?.resume()
+	}
+
+	// MARK: - Layout -
+
+	private func makeDisplayNode() -> ASDisplayNode {
+
+		return ASDisplayNode { [weak self] () -> UIView in
+
+			if let svgView = self?.svgView {
+				return svgView
+			} else {
+				return UIView()
+			}
+		}
 	}
 }
