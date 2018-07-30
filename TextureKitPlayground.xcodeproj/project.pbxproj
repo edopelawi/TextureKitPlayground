@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8D11CF93210EF2ED00552FAE /* PhotoOutsetNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D11CF92210EF2ED00552FAE /* PhotoOutsetNode.swift */; };
+		8D11CF97210F1AF500552FAE /* Macaw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D11CF96210F1AF500552FAE /* Macaw.framework */; };
 		8D193E8820EB796100E0A388 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D193E8720EB796100E0A388 /* AppDelegate.swift */; };
 		8D193E8A20EB796100E0A388 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D193E8920EB796100E0A388 /* ViewController.swift */; };
 		8D193E8F20EB796300E0A388 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D193E8E20EB796300E0A388 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		8D11CF92210EF2ED00552FAE /* PhotoOutsetNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoOutsetNode.swift; sourceTree = "<group>"; };
+		8D11CF96210F1AF500552FAE /* Macaw.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Macaw.framework; path = Carthage/Build/iOS/Macaw.framework; sourceTree = "<group>"; };
 		8D193E8420EB796100E0A388 /* TextureKitPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextureKitPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D193E8720EB796100E0A388 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D193E8920EB796100E0A388 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +48,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D59A54020EF251700BFE68B /* AsyncDisplayKit.framework in Frameworks */,
+				8D11CF97210F1AF500552FAE /* Macaw.framework in Frameworks */,
 				8D59A54220EF251700BFE68B /* PINOperation.framework in Frameworks */,
 				8D59A54320EF251700BFE68B /* PINRemoteImage.framework in Frameworks */,
 				8D59A54120EF251700BFE68B /* PINCache.framework in Frameworks */,
@@ -88,6 +91,7 @@
 		8D59A53B20EF24FA00BFE68B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8D11CF96210F1AF500552FAE /* Macaw.framework */,
 				8D59A53C20EF251700BFE68B /* AsyncDisplayKit.framework */,
 				8D59A53D20EF251700BFE68B /* PINCache.framework */,
 				8D59A53E20EF251700BFE68B /* PINOperation.framework */,
@@ -185,6 +189,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/PINCache.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/PINOperation.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/PINRemoteImage.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Macaw.framework",
 			);
 			name = "Copy Carthage Frameworks";
 			outputPaths = (
