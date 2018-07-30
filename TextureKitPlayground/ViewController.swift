@@ -11,7 +11,7 @@ import AsyncDisplayKit
 
 final class ViewController: ASViewController <ASDisplayNode> {
 
-	private let mainNode = PhotoOutsetNode()
+	private let mainNode = CommerceItemNode()
 
 	init() {
 		super.init(node: mainNode)
