@@ -13,7 +13,7 @@ final class PhotoOutsetNode: ASDisplayNode {
 
 	private let pictureFrameNode = ASDisplayNode()
 	private let outsetNode = ASDisplayNode()
-	private let labelNode = ASTextNode()
+	private let textNode = ASTextNode()
 
 	override init() {
 		super.init()
@@ -23,19 +23,23 @@ final class PhotoOutsetNode: ASDisplayNode {
 
 		configurePictureFrameNode()
 		configureOutsetNode()
+		configureTextNode()
 	}
-
-	// MARK: - Private methods
-
-	// MARK: - Layout
 
 	override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
 
-		let spec = ASAbsoluteLayoutSpec(children: [ pictureFrameNode, outsetNode ])
+		let textSpec = ASCenterLayoutSpec(centeringOptions: .XY, sizingOptions: .minimumXY, child: textNode)
+		let outsetSpec = ASOverlayLayoutSpec(child: outsetNode, overlay: textSpec)
+
+		let spec = ASAbsoluteLayoutSpec(children: [ pictureFrameNode, outsetSpec ])
 		spec.sizing = .sizeToFit
 
 		return ASCenterLayoutSpec(centeringOptions: .XY, sizingOptions: .minimumXY, child: spec)
 	}
+
+	// MARK: - Private methods
+
+	// MARK: - Configuration -
 
 	private func configurePictureFrameNode() {
 
@@ -53,5 +57,16 @@ final class PhotoOutsetNode: ASDisplayNode {
 
 		outsetNode.style.preferredSize = CGSize(width: 40, height: 40)
 		outsetNode.style.layoutPosition = CGPoint(x: 150, y: 0)
+	}
+
+	private func configureTextNode() {
+
+		textNode.attributedText = NSAttributedString(
+			string: "+",
+			attributes: [
+				NSAttributedStringKey.font: UIFont.systemFont(ofSize: 32, weight: .semibold),
+				NSAttributedStringKey.foregroundColor: UIColor.white
+			]
+		)
 	}
 }
