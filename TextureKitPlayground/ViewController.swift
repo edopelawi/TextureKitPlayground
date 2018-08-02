@@ -11,7 +11,7 @@ import AsyncDisplayKit
 
 final class ViewController: ASViewController <ASDisplayNode> {
 
-	private let mainNode = EnhancedNetworkImageNode()
+	private let mainNode = ListOfContactNode()
 
 	init() {
 		super.init(node: mainNode)
@@ -25,11 +25,5 @@ final class ViewController: ASViewController <ASDisplayNode> {
 		super.viewDidLoad()
 
 		mainNode.backgroundColor = UIColor.white
-
-		// TODO: Choose one or the other.
-		let urlString = "https://graphicdesignfall16.files.wordpress.com/2016/10/adobe-company-logo.jpg"
-//		let urlString = "https://dev.w3.org/SVG/tools/svgweb/samples/svg-files/adobe.svg"
-
-		mainNode.configure(for: urlString)
 	}
 }
