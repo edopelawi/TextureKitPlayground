@@ -13,5 +13,5 @@ Ricardo Pramana Suranta, ricardo.pramana@gmail.com
 
 ## License
 
-TextureKitPlayground is available under the MIT license.
+TextureKitPlayground is available under the MIT license. See [LICENSE](LICENSE) for details.
 
