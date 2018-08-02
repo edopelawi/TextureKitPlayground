@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D03CF802112C71B00A02D2A /* ListOfContactNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D03CF7F2112C71B00A02D2A /* ListOfContactNode.swift */; };
 		8D11CF93210EF2ED00552FAE /* PhotoOutsetNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D11CF92210EF2ED00552FAE /* PhotoOutsetNode.swift */; };
 		8D11CF97210F1AF500552FAE /* Macaw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D11CF96210F1AF500552FAE /* Macaw.framework */; };
 		8D11CF99210F2AA900552FAE /* SVGImageNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D11CF98210F2AA900552FAE /* SVGImageNode.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D03CF7F2112C71B00A02D2A /* ListOfContactNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfContactNode.swift; sourceTree = "<group>"; };
 		8D11CF92210EF2ED00552FAE /* PhotoOutsetNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoOutsetNode.swift; sourceTree = "<group>"; };
 		8D11CF96210F1AF500552FAE /* Macaw.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Macaw.framework; path = Carthage/Build/iOS/Macaw.framework; sourceTree = "<group>"; };
 		8D11CF98210F2AA900552FAE /* SVGImageNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVGImageNode.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				8D11CF92210EF2ED00552FAE /* PhotoOutsetNode.swift */,
 				8D11CF98210F2AA900552FAE /* SVGImageNode.swift */,
 				8D11CF9A210F327B00552FAE /* EnhancedNetworkImageNode.swift */,
+				8D03CF7F2112C71B00A02D2A /* ListOfContactNode.swift */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				8D11CF99210F2AA900552FAE /* SVGImageNode.swift in Sources */,
 				8DC6EB3820F74109008850A7 /* PhotoOverlayNode.swift in Sources */,
 				8D11CF9B210F327B00552FAE /* EnhancedNetworkImageNode.swift in Sources */,
+				8D03CF802112C71B00A02D2A /* ListOfContactNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
